@@ -15,7 +15,6 @@
         <img src="icons/avatar.png" alt="avatar">
     </div>
     <div class="container">
-        <!--<i class="fa-solid fa-check"></i><i class="fa-solid fa-exclamation"></i><i class="fa-solid fa-x"></i><i class=""></i>-->
         <p class="header_of_block">Знание технологий</p>
         <ol>
             <li>HTML</li>
@@ -28,7 +27,7 @@
         <ul class="hrefs">
             <li>Ссылки: <a href="https://www.google.com/" target="_blank" class="href_google">Гугл</a></li>
             <li>Поля ввода: <input type="text" placeholder="input" value="input"></li>
-             <li>Кнопки:<button id="summoning_button" onclick="show('block', 'hidden')">Button</button></li> <!--onclick="show('block', 'hidden')" -->
+             <li>Кнопки:<button id="summoning_button" onclick="show('block', 'hidden')">Button</button></li>
         </ul>
     </div>
     <div class="container">
@@ -61,16 +60,14 @@
     <div id="fogging">
     <!-- самое всплывающее окно -->
         <div id="popup">
-            <!-- <p id="x_mark" onclick="show('none', 'visible')">&#x58;</p> -->
             <img src="icons/x-solid.svg" alt="" id="x_mark" onclick="show('none', 'visible')">
-            <!-- <i class="fa-solid fa-x" onclick="show('none', 'visible')"></i> -->
             <div id="popup_container" class="container">
                 <div class="word-calculator"><h3 class="word-calculator">Калькулятор</h3></div>
                 <div id="block-with-list">
                     <ol class="actions_with_numbers">
-                        <li><input type="text" placeholder="Число" onchange='to_change_mark(this.value, "first")' class="inputs"><img src="" alt="" style="top: 75px;" id="first_mark"></li> <!-- <i class="fa-solid" id="first_mark" style="top: 105px;"></i> вот на эти три -->
-                        <li><input type="text" placeholder="Действие" onchange='to_change_mark(this.value, "second")' class="inputs"><img src="" alt="" style="top: 130px;" id="second_mark"></li> <!--<i class="fa-solid" id="second_mark" style="top: 160px;"></i> поменять на случай если-->
-                        <li><input type="text" placeholder="Число" onchange='to_change_mark(this.value, "third")' class="inputs"><img src="" alt="" style="top: 185px;" id="third_mark"></i></li> <!-- <i class="fa-solid" id="third_mark" style="top: 215px;"> потеряется папка с иконками-->
+                        <li><input type="text" placeholder="Число" onchange='to_change_mark(this.value, "first")' class="inputs"><img src="" alt="" style="top: 75px;" id="first_mark"></li>
+                        <li><input type="text" placeholder="Действие" onchange='to_change_mark(this.value, "second")' class="inputs"><img src="" alt="" style="top: 130px;" id="second_mark"></li>
+                        <li><input type="text" placeholder="Число" onchange='to_change_mark(this.value, "third")' class="inputs"><img src="" alt="" style="top: 185px;" id="third_mark"></i></li>
                         <li><button onclick='calculation()' class="button_for_answer">=</button></li>
                         <h3 id="answer"></h3>
                     </ol>
