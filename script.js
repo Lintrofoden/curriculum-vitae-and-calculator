@@ -48,13 +48,13 @@ function to_change_mark(value, position){
         if(n === "+" || n === "-" || n === "*" || n === "**" || n === "/" || n === "//" || n === "%"){
             mark.classList.remove('exclamation_mark');
             mark.classList.add('check_mark');
-            mark.src = "icons and images/check-solid.svg";
+            mark.src = "icons/check-solid.svg";
             second_field = value;
         }
         else{
             mark.classList.remove('check_mark');
             mark.classList.add('exclamation_mark');
-            mark.src = "icons and images/exclamation-solid.svg";
+            mark.src = "icons/exclamation-solid.svg";
             second_field = "null";
         }
     }
@@ -65,14 +65,14 @@ function to_change_mark(value, position){
         {
             mark.classList.remove('exclamation_mark');
             mark.classList.add('check_mark');
-            mark.src = "icons and images/check-solid.svg";
+            mark.src = "icons/check-solid.svg";
             first_field = Number(value);
         }
         else if (position === "third")
         {
             mark.classList.remove('exclamation_mark');
             mark.classList.add('check_mark');
-            mark.src = "icons and images/check-solid.svg";
+            mark.src = "icons/check-solid.svg";
             third_field = Number(value);
         }
     }
@@ -81,7 +81,7 @@ function to_change_mark(value, position){
     {
         mark.classList.remove('check_mark');
         mark.classList.add('exclamation_mark');
-        mark.src = "icons and images/exclamation-solid.svg";
+        mark.src = "icons/exclamation-solid.svg";
         if (position === "first")
             first_field = null;
         else
