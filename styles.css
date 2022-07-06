@@ -1,0 +1,245 @@
+*{
+    background-color: #FFF4DD;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    padding: 30px 180px;
+    background-color: #85A38D;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 55px;
+    margin: 30px;
+}
+h2{
+    color: #000000;
+    font-weight: 500;
+    font-size: 15px;
+}
+img{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+ol{
+    margin-left: 40px;
+}
+ul li{
+    margin-left: 20px;
+}
+li{
+    font-weight: 500;
+}
+input{
+    border: 1px solid #85A38D;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 8px 15px;
+    width: 100px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 10px;
+}
+a{
+    font-weight: 700;
+}
+table{
+    margin-left: 55px;
+}
+th{
+    background-color: #85A38D;
+    color: #FFFFFF;
+    padding: 12px 15px;
+    text-align: left;
+}
+td{
+    background-color: #FFFFFF;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 12px 15px;
+    text-align: left;
+}
+ol li input{
+    margin: 10px;
+}
+/*Вот так я ебаненько центрировал все div по середке*/
+.container{
+    width: 575px;
+    margin: 60px auto;
+}
+.avatar{
+    text-align: center;
+}
+.href_google{
+    font-weight: 700;
+    font-size: 15px;
+    color: #00AEE4;
+}
+.hrefs li{
+    padding-top: 20px;
+    list-style-type: none;
+}
+.contacts{
+    padding-top: 0;
+    margin-left: 18px;
+}
+.phone_number{
+    color: #293139;
+    text-decoration: none;
+}
+.mail{
+    color:#00AEE4
+}
+.fa-x{
+    margin: 10px;
+    cursor: pointer;
+}
+.fa-check, .fa-exclamation{
+    position: fixed;
+    margin: 10px;
+    display: inline;
+}
+.actions_with_numbers{
+    padding-left: 0;
+    margin-left: 0;
+    list-style-type: none;
+}
+.header_of_block{
+    color: #293139;
+    font-weight: 800;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #85A38D;
+    padding-left: 15px;
+}
+.button_for_answer{
+    background-color: #FFF4DD;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+.check_mark{
+    position: fixed;
+    margin-left: 5px;
+    display: inline;
+    width: 20px;
+}
+.exclamation_mark{
+    position: fixed;
+    width: 6px;
+    margin-left: 10px;
+    display: inline;
+}
+#fogging{
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 2;
+}
+#popup{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 575px;
+    height: 530px;
+    background-color: #FFF4DD;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    z-index: 150;
+}
+#popup_container{
+    width: 275px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+#summoning_button{
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: #00AEE4;
+    color: #FFFFFF;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 40px;
+}
+/* #first_mark{
+    position: fixed;
+    margin-left: 5px;
+    display: inline;
+    width: 20px;
+    z-index: 60;
+}
+#second_mark{
+    z-index: 32;
+    position: fixed;
+    width: 5px;
+    margin-left: 5px;
+    display: inline;
+} */
+#first_mark{
+    position: fixed;
+    z-index: 60;
+}
+#second_mark{
+    position: fixed;
+    z-index: 32;
+}
+#third_mark{
+    position: fixed;
+}
+#x_mark{
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10px;
+    margin-top: -40px;
+    cursor: pointer;
+    width: 12px;
+    font-weight: bold;
+}
+
+.Antifade {
+    animation: antifade 600ms;
+	opacity: 1;
+	visibility: visible;
+}
+
+@keyframes antifade {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.Fade {
+    animation: fade 600ms;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

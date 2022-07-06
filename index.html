@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSVas</title>
+</head>
+<body>
+    <h1>Пупкин Василий</h1>
+    <div class="avatar container">
+        <h2>Начинающий фронтенд-разработчик, ищу работу в хорошей компании!</h2>
+        <img src="icons and images/avatar.png" alt="avatar">
+    </div>
+    <div class="container">
+        <!--<i class="fa-solid fa-check"></i><i class="fa-solid fa-exclamation"></i><i class="fa-solid fa-x"></i><i class=""></i>-->
+        <p class="header_of_block">Знание технологий</p>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+    </div>
+    <div class="container">
+        <p class="header_of_block">Умею делать</p>
+        <ul class="hrefs">
+            <li>Ссылки: <a href="https://www.google.com/" target="_blank" class="href_google">Гугл</a></li>
+            <li>Поля ввода: <input type="text" placeholder="input" value="input"></li>
+             <li>Кнопки:<button id="summoning_button" onclick="show('block', 'hidden')">Button</button></li> <!--onclick="show('block', 'hidden')" -->
+        </ul>
+    </div>
+    <div class="container">
+        <p class="header_of_block">Образование</p>
+        <table>
+            <thead>
+                <th>Учреждение образования</th>
+                <th>Полученные навыки</th>
+            </thead>
+            <tbode>
+                <tr>
+                    <td>СШ №15</td>
+                    <td>Читать, писать, считать</td>
+                </tr>
+                <tr>
+                    <td>КНИТУ КАИ, ВШПИТ</td>
+                    <td>Ничего</td>
+                </tr>
+            </tbode>
+        </table>
+    </div>
+    <div class="container">
+        <p class="header_of_block">Контакты</p>
+        <ul class="contacts">
+            <li>Телефон: <a href="tel:+375-29-123-45-67" class="phone_number">+375-29-123-45-67</a></li>
+            <li>E-mail: <a href="mailto:pupkin@gmail.com" class="mail">pupkin@gmail.com</a> </li>
+        </ul>
+    </div>
+    <!-- затмение, когда вызвается popup -->
+    <div id="fogging">
+    <!-- самое всплывающее окно -->
+        <div id="popup">
+            <!-- <p id="x_mark" onclick="show('none', 'visible')">&#x58;</p> -->
+            <img src="icons and images/x-solid.svg" alt="" id="x_mark" onclick="show('none', 'visible')">
+            <!-- <i class="fa-solid fa-x" onclick="show('none', 'visible')"></i> -->
+            <div id="popup_container" class="container">
+                <div class="word-calculator"><h3 class="word-calculator">Калькулятор</h3></div>
+                <div id="block-with-list">
+                    <ol class="actions_with_numbers">
+                        <li><input type="text" placeholder="Число" onchange='to_change_mark(this.value, "first")' class="inputs"><img src="" alt="" style="top: 75px;" id="first_mark"></li> <!-- <i class="fa-solid" id="first_mark" style="top: 105px;"></i> вот на эти три -->
+                        <li><input type="text" placeholder="Действие" onchange='to_change_mark(this.value, "second")' class="inputs"><img src="" alt="" style="top: 130px;" id="second_mark"></li> <!--<i class="fa-solid" id="second_mark" style="top: 160px;"></i> поменять на случай если-->
+                        <li><input type="text" placeholder="Число" onchange='to_change_mark(this.value, "third")' class="inputs"><img src="" alt="" style="top: 185px;" id="third_mark"></i></li> <!-- <i class="fa-solid" id="third_mark" style="top: 215px;"> потеряется папка с иконками-->
+                        <li><button onclick='calculation()' class="button_for_answer">=</button></li>
+                        <h3 id="answer"></h3>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/8bba97f093.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
